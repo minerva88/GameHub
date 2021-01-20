@@ -10,8 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
-
-    <title>GameHub</title>
+    <title>Sell your games</title>
 </head>
 <body>
     <header class="header-container">
@@ -29,44 +28,42 @@
 
     <nav>
         <ul>
-            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
         <ul>
             <li><a href="latest.html">Latest releases</a></li>
             <li><a href="browseused.html">Browse used games</a></li>
-            <li><a href="sell.html">Sell games</a></li>
+            <li><a class="active" href="sell.html">Sell games</a></li>
         </ul>
 
     </nav>
-   
 
 
     
-    <main class="container">
-        <section class="item-banner-home">
-            <h1 class="banner-header">Join our vibrant community today!</h1>
+    <main class="container-sell">
+        <section class="banner-sell">
+            <h1>Sell your used games</h1>
         </section>
-        <section class="item-card1 card">
-            <img class="card-img" src="images/playstation_controller.jpeg" alt="playstation_controller">
-                <h2>Latest releases</h2>
-                <p>Check out our reviews of the latest games, preorder upcoming releases and purchase the latest games.</p>
-                <a href="latest.html">Take me there.</a>
-        </section>
-        <section class="item-card2 card">
-            <img class="card-img" src="images/gaming-couple.jpeg" alt="gamers">
-                <h2>Browse used games</h2>
-                <p>Buy discounted games from your fellow gamers.</p>
-                <a href="browseused.html">Take me there.</a>
-
-
-        </section>
-        <section class="item-card3 card">
-            <img class="card-img" src="images/old_games.jpeg" alt="game_cartridges">
-                <h2>Sell your used games</h2>
-                <p>Earn some cash by selling your completed games.</p>
-                <a href="sell.html">Take me there.</a>
+        <section class="selling-form">
+           <form>
+               <fieldset>
+                   <label for="title">Game Title</label>
+                   <input type="text" name="title" id="title"><br>
+                   <label for="console">Console</label><br>
+                   <input type="radio" name="XBOX 360" id="XBOX 360"><label for="XBOX 360">XBOX 360</label><br>
+                   <input type="radio" name="PS3" id="PS3"><label for="PS3">PS3</label><br>
+                   <input type="radio" name="PC" id="PC"><label for="PC">PC</label><br>
+                   <input type="radio" name="Nintendo Wii" id="Nintendo Wii"><label for="Nintendo Wii">Nintendo Wii</label><br>
+                   <label for="price">Price</label>
+                   <input type="text" name="price" id="price"><br>
+                   <label for="description">Description of game</label><br>
+                   <textarea name="description" id="description" cols="30" rows="10"></textarea><br>
+                   <button class="btn">SELL</button>
+                   
+               </fieldset>
+           </form> 
         </section>
         
 
@@ -78,7 +75,5 @@
         <img class="social-icon" src="icons/twitter.png" alt="twitter-icon">
         <img class="social-icon" src="icons/instagram.png" alt="instagram-icon">
     </footer>
-  
-    
 </body>
 </html>
